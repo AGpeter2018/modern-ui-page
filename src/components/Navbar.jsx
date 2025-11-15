@@ -1,8 +1,10 @@
 import { Menu, X } from 'lucide-react'
 import React, { useState } from 'react'
+import { Features } from 'tailwindcss'
 
 const Navbar = () => {
     const [openMenu, setOpenMenu] = useState(false)
+    const [markTab, setMarkTab] = useState('features')
   return (
     <nav className='fixed top-0 w-full z-50 transition-all duration-300 bg-slate-950/20 backdrop-blur-sm border-b border-slate-900 shadow-2xl'>
         <div className='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8'>
@@ -11,9 +13,9 @@ const Navbar = () => {
                     <div className='text-sky-100 text-xl font-bold font-serif tracking-tight w-6 h-6 sm:w-8 sm:h-8 cursor-pointer'>AGpeter</div>
                 </div>
                 <div className='hidden md:flex items-center space-x-6 lg:space-8'>
-                    <a href="#features" className='text-gray-300 hover:text-white text-sm lg:text-base'>Features</a>
-                    <a href="#pricing" className='text-gray-300 hover:text-white text-sm lg:text-base'>Pricing</a>
-                    <a href="#testimonial" className='text-gray-300 hover:text-white text-sm lg:text-base'>Testimonials</a>
+                    <a href="#features" className={`text-gray-300 hover:text-white text-sm lg:text-base ${markTab === 'features' ? ('border-b border-blue-900 p-5 '):('')}`} onClick={() => setMarkTab('features')}>Features</a>
+                    <a href="#pricing" className={`text-gray-300 hover:text-white text-sm lg:text-base ${markTab === 'pricing' ? ('border-b border-blue-900 p-5 '):('')}`} onClick={() => setMarkTab('pricing')}>Pricing</a>
+                    <a href="#testimonial" className={`text-gray-300 hover:text-white text-sm lg:text-base ${markTab === 'testimonies' ? ('border-b border-blue-900 p-5 '):('')}`} onClick={() => setMarkTab('testimonies')}>Testimonials</a>
                 </div>
                 <button className='md:hidden cursor-pointer p-2 text-gray-300 hover:text-white' onClick={()=> setOpenMenu((prev) => !prev)}>
                     {openMenu ? 
