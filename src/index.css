@@ -9,8 +9,36 @@
     animation-name: slideInFromTop;
   }
 
+  .slide-in-from-bottom {
+    animation-name: slideInFromBottom;
+  }
+
   .duration-300 {
     animation-duration: 300ms;
+  }
+
+  .duration-200 {
+    animation-duration: 200ms;
+  }
+
+  .duration-700 {
+    animation-duration: 700ms;
+  }
+
+  .duration-900 {
+    animation-duration: 900ms;
+  }
+
+  .delay-100 {
+    animation-delay: 100ms;
+  }
+
+  .delay-200 {
+    animation-delay: 200ms;
+  }
+
+  .delay-300 {
+    animation-delay: 300ms;
   }
 }
 
@@ -18,6 +46,18 @@
   from {
     opacity: 0;
     transform: translateY(-1rem);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideInFromBottom {
+  from {
+    opacity: 0;
+    transform: translateY(1rem);
   }
 
   to {
