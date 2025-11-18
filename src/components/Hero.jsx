@@ -24,7 +24,7 @@ const Hero = () => {
   const floatingCart =  floatingCards[activeTab]
 
   return (
-    <section className='relative min-h-screen flex items-center justify-center pt-16 px-4 sm:pt-20 sm:px-6 lg:px-8 overflow-hidden'>
+    <section id='home' className='relative min-h-screen flex items-center justify-center pt-16 px-4 sm:pt-20 sm:px-6 lg:px-8 overflow-hidden'>
       <div className='absolute inset-0 opacity-30' style={{
         background: `radial-gradient(600px circle at ${mousePosition.x}px ${mousePosition.y}px, rgba(59, 130, 246, 0.15), transparent 40%)`}}/>
         <div className='absolute top-20 left-4 sm:left-10 w-48 sm:w-72 h-48 sm:h-72 bg-blue-500/10 rounded-full blur-3xl animate-pulse'/>
