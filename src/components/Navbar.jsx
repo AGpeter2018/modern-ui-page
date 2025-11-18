@@ -86,7 +86,7 @@ const Navbar = ({scrolled}) => {
                   <AnchorLink href="#pricing" offset={50}>
                     <a  className='block text-gray-300 hover:text-white hover:bg-slate-950 hover:p-2 rounded-xl text-sm lg:text-base' onClick={() => setOpenMenu(false)}>Pricing</a>
                   </AnchorLink>
-                  <AnchorLink href="#testimonial" offset={50}>
+                  <AnchorLink href="#testimonials" offset={50}>
                     <a  className='block text-gray-300 hover:text-white hover:bg-slate-950 hover:p-2 rounded-xl text-sm lg:text-base' onClick={() => setOpenMenu(false)}>Testimonials</a>
                   </AnchorLink>
                 </div>
