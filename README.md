@@ -1,16 +1,78 @@
-# React + Vite
+📋 Overview
+A sleek, modern landing page for CodaBlock - an AI-powered developer tools platform. Built with React and Tailwind CSS, featuring smooth animations, responsive design, and a beautiful gradient aesthetic.
+This is a frontend-only landing page designed to showcase features, pricing, and product information.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+✨ Features
 
-Currently, two official plugins are available:
+🎨 Design
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Modern UI/UX - Clean, professional interface with gradient accents
+Fully Responsive - Works perfectly on mobile, tablet, and desktop
+Smooth Animations - Subtle hover effects and transitions
+Dark Theme - Sleek dark mode design with blue/cyan gradients
 
-## React Compiler
+📄 Sections
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Hero Section - Eye-catching header with CTA
+Features Showcase - 5+ AI-powered features with code examples
+Pricing Plans - 3-tier pricing (Starter, Professional, Enterprise)
+Footer - Social links, navigation, and legal links
 
-## Expanding the ESLint configuration
+🛠️ Technical
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+React Components - Modular, reusable component architecture
+Tailwind CSS - Utility-first styling for rapid development
+Lucide Icons - Modern, consistent icon set
+SVG Logo - Custom animated logo
+SEO Ready - Semantic HTML structure
+
+🚀 Tech Stack
+
+React 18.x - JavaScript library for UI
+Tailwind CSS - Utility-first CSS framework
+Lucide React - Icon library
+React Router - Client-side routing (if needed)
+
+📦 Installation
+Prerequisites
+
+Node.js 16.x or higher
+npm or yarn
+
+Setup
+bash# Clone the repository
+git clone https://github.com/AGpeter2018/codablock-landing.git
+cd codablock-landing
+
+# Install dependencies
+npm install
+
+# Start development server
+npm start
+
+# Build for production
+npm run build
+The app will open at http://localhost:3000
+
+📁 Project Structure
+codablock-landing/
+├── public/
+│   ├── favicon.svg          # App logo/icon
+│   ├── index.html           # HTML template
+│   └── manifest.json        # PWA manifest
+│
+├── src/
+│   ├── components/
+│   │   ├── Hero.jsx         # Hero section
+│   │   ├── Features.jsx     # Features showcase
+│   │   ├── Pricing.jsx      # Pricing plans
+│   │   ├── Footer.jsx       # Footer component
+│   │   └── Navbar.jsx       # Navigation bar (if any)
+│   │
+│   ├── App.js               # Main app component
+│   ├── index.js             # Entry point
+│   └── index.css            # Global styles
+│
+├── tailwind.config.js       # Tailwind configuration
+├── package.json
+└── README.md
