@@ -77,10 +77,18 @@ const Navbar = ({scrolled}) => {
         {openMenu && (
             <div className='md:hidden bg-slate-900/95 backdrop-blur-lg border-t border-slate-800 animation-in slide-in-from-top duration-300 shadow-2xl'>
                 <div className='px-4 py-4 sm:py-6 space-y-3 sm:space-y-4 transition-all duration-5'>
-                     <a href="#home" className='block text-gray-300 hover:text-white hover:bg-slate-950 hover:p-2 rounded-xl text-sm lg:text-base' onClick={() => setOpenMenu(false)}>Home</a>
-                     <a href="#features" className='block text-gray-300 hover:text-white hover:bg-slate-950 hover:p-2 rounded-xl text-sm lg:text-base' onClick={() => setOpenMenu(false)}>Features</a>
-                    <a href="#pricing" className='block text-gray-300 hover:text-white hover:bg-slate-950 hover:p-2 rounded-xl text-sm lg:text-base' onClick={() => setOpenMenu(false)}>Pricing</a>
-                    <a href="#testimonial" className='block text-gray-300 hover:text-white hover:bg-slate-950 hover:p-2 rounded-xl text-sm lg:text-base' onClick={() => setOpenMenu(false)}>Testimonials</a>
+                  <AnchorLink href="#home" offset={50}>
+                     <a  className='block text-gray-300 hover:text-white hover:bg-slate-950 hover:p-2 rounded-xl text-sm lg:text-base' onClick={() => setOpenMenu(false)}>Home</a>
+                  </AnchorLink>
+                  <AnchorLink href="#features" offset={50}>
+                     <a className='block text-gray-300 hover:text-white hover:bg-slate-950 hover:p-2 rounded-xl text-sm lg:text-base' onClick={() => setOpenMenu(false)}>Features</a>
+                  </AnchorLink>
+                  <AnchorLink href="#pricing" offset={50}>
+                    <a  className='block text-gray-300 hover:text-white hover:bg-slate-950 hover:p-2 rounded-xl text-sm lg:text-base' onClick={() => setOpenMenu(false)}>Pricing</a>
+                  </AnchorLink>
+                  <AnchorLink href="#testimonial" offset={50}>
+                    <a  className='block text-gray-300 hover:text-white hover:bg-slate-950 hover:p-2 rounded-xl text-sm lg:text-base' onClick={() => setOpenMenu(false)}>Testimonials</a>
+                  </AnchorLink>
                 </div>
             </div>
             )}
